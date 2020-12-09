@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Overpass:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', 'Acme', Arial, sans-serif, 'Helvetica';
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 4em 2em;
+    background-color: green;
+    color: white;
+
+    nav{
+        float: right;
+        padding: 1 auto;
+    }
+    nav ul{
+        display: flex;
+        padding-bottom: 2em;
+
+    }
+    nav li{
+        list-style-type: none;
+        padding: 0 1em;
+        //line-height: 0em;
+    }
+    li a{
+        text-decoration:  none;
+        color: white;
+        padding: 1em;
+        font-weight: 800;
+
+        &:hover{
+            background-color: darken($color:green, $amount: 5%);
+            border-radius: 1px 2px 2px 2px;
+        }
+    }
+}
+.product-header{
+    // background-color: darken($color: blue, $amount: 10%);
+    padding: 1em 1em;
+    
+
+}
+.product-catalog{
+    padding: 1em 1em;
+    margin: 0;
+    display: flex;
+
+    .product-single{
+        max-width: 33%;
+        padding: 0;
+        // color: white;
+        // background-color: darken($color: blue, $amount: 34%);
+        // border: 1px solid white;
+        // border-radius: 5px 5px 5px 5px;
+        // padding: 0 4em;
+        // margin: 0 1em;
+
+    }
+}
+
+.blog-header-text{
+    font-family: 'Englebert';
+    border: none;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: grey;
+    color: black;
+}
